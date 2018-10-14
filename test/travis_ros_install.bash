@@ -1,7 +1,7 @@
 #!/bin/bash -xve
 
 #required packages
-pip install --upgrade pip==18.1
+python -m pip install --upgrade pip==18.1
 #pip install catkin_pkg
 #pip install empy
 #pip install pyyaml
