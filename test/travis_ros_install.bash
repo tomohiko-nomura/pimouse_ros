@@ -1,7 +1,7 @@
 #!/bin/bash -xve
 
 #required packages
-pip uninstall pip
+pip -y uninstall pip
 #pip install catkin_pkg
 #pip install empy
 #pip install pyyaml
