@@ -1,7 +1,7 @@
 #!/bin/bash -xve
 
 #required packages
-pip install --upgrade SoftLayer requests==2.5.3
+pip uninstall pip
 #pip install catkin_pkg
 #pip install empy
 #pip install pyyaml
