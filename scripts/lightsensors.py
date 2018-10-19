@@ -37,10 +37,10 @@ if __name__ == '__main__':
         except IOError:
             rospy.logerr("cannot write to " + devfile)
 
-            f = get_freq()                 #ここから4行追加
-            if f != freq:
-                freq = f
-                rate = rospy.Rate(freq)    #ここまで
+        f = get_freq()                 #ここから4行追加
+        if f != freq:
+            freq = f
+            rate = rospy.Rate(freq)    #ここまで
 
         rate.sleep()
 
