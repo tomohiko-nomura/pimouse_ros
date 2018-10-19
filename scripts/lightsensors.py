@@ -8,7 +8,6 @@ def get_freq():    #この関数を追加
     try:
         if f <= 0.0:
             raise Exception()
-
     except:
         rospy.logerr("value error: lightsensors_freq")
         sys.exit(1)
@@ -37,10 +36,11 @@ if __name__ == '__main__':
                 pub.publish(d)
         except IOError:
             rospy.logerr("cannot write to " + devfile)
+
             f = get_freq()                 #ここから4行追加
             if f != freq:
                 freq = f
                 rate = rospy.Rate(freq)    #ここまで
 
-            rate.sleep()
+        rate.sleep()
 
