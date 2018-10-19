@@ -48,7 +48,7 @@ class LightsensorTest(unittest.TestCase):
         time.sleep(3)
                                                                                                                                                                                                                                                             
         ###コールバック関数が3秒間で最低1回、最高でも4回しか呼ばれてないことを確認###
-        self.assertTrue(self.count < c_prev + 4 , "freq does not change")
+        self.assertTrue( self.count < c_prev + 4, "freq does not change")
         self.assertFalse(self.count == c_prev   , "subscriber is stopped")
 
 if __name__ == '__main__':
